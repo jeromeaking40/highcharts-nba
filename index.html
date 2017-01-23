@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title>Highcharts NBA</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="controllers/mainCtrl.js" type="text/javascript"></script>
+    <script src="controllers/reboundsCtrl.js" type="text/javascript"></script>
+    <script src="controllers/assistsCtrl.js" type="text/javascript"></script>
+</head>
+  <body ng-controller="mainCtrl as main">
+    <nav>
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="#/">Points</a></li>
+        <li role="presentation"><a href="#/assists">Assists</a></li>
+        <li role="presentation"><a href="#/rebounds">Rebounds</a></li>
+        </ul>
+    </nav>
+
+    <div ng-view></<ng-view>
+
+
+  </body>
+</html>
